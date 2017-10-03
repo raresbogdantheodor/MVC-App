@@ -15,7 +15,7 @@ namespace MVC_App.Controllers
         public ActionResult Index()
         {
             var model = _db.Trains.ToList();
-            return View();
+            return View(model);
         }
 
         // GET: Trains/Details/5
