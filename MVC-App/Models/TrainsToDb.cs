@@ -10,7 +10,7 @@ namespace MVC_App.Models
     {
         public DbSet<Train> Trains { get; set; }
 
-        public TrainsToDb()
+        public TrainsToDb() : base("name=TrainsDbTeamnet")
         {
 
         }
