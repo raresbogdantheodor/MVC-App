@@ -159,6 +159,10 @@
     <Compile Include="Migrations\201710032001149_FirstMigration.Designer.cs">
       <DependentUpon>201710032001149_FirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710041230305_RequiredAnoForName.cs" />
+    <Compile Include="Migrations\201710041230305_RequiredAnoForName.Designer.cs">
+      <DependentUpon>201710041230305_RequiredAnoForName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Train.cs" />
     <Compile Include="Models\TrainsToDb.cs" />
@@ -220,6 +224,10 @@
     <Content Include="Views\Trains\Index.cshtml" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <Content Include="Views\Trains\Create.cshtml" />
+    <Content Include="Views\Trains\Delete.cshtml" />
+    <Content Include="Views\Trains\Details.cshtml" />
+    <Content Include="Views\Trains\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -230,6 +238,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710032001149_FirstMigration.resx">
       <DependentUpon>201710032001149_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710041230305_RequiredAnoForName.resx">
+      <DependentUpon>201710041230305_RequiredAnoForName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,40 @@
+﻿@model MVC_App.Models.Train
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Sterge trenuletul</h2>
+
+<h3>De ce vrei sa stergi trenuletul boss? :(</h3>
+<div>
+    <h4>Train</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainType)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

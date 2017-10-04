@@ -15,10 +15,10 @@ namespace MVC_App.Migrations
         protected override void Seed(MVC_App.Models.TrainsToDb context)
         {
             
-            for (int i = 0; i < 100; i++)
-            {
-                context.Trains.AddOrUpdate(t => t.Name, new Models.Train { Name = "InterRegio", TrainType = Models.Train.TrainCategory.Maglev });
-            }
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    context.Trains.AddOrUpdate(t => t.Name, new Models.Train { Name = "InterRegio", TrainType = Models.Train.TrainCategory.Maglev });
+            //}
             
         }
     }
